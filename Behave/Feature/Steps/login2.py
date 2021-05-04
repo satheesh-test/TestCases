@@ -49,6 +49,7 @@ def resultsPage(context, key):
         print("User got some unknown page")
 
 
+# Close the browser
 @Then("Close the browser")
 def closeBrowser(context):
     context.driver.close()
