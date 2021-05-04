@@ -8,7 +8,6 @@ global driver
 
 @pytest.fixture()
 def setUp(self):
-    print("Hello")
     driver = webdriver.Chrome(executable_path="D:\softwares\Chrome Driver\chromedriver.exe")
     driver.get("https://letskodeit.teachable.com/p/practice")
     driver.maximize_window()
