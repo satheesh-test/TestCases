@@ -11,6 +11,7 @@ def setUp(self):
     driver = webdriver.Chrome(executable_path="D:\softwares\Chrome Driver\chromedriver.exe")
     driver.get("https://letskodeit.teachable.com/p/practice")
     driver.maximize_window()
+    time.sleep(5)
 
 
 def test_fun(setUp):
