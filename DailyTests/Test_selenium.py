@@ -23,6 +23,7 @@ def testSelectingRadioButtons(setUp):
         time.sleep(3)
 
 
+
 def testDropdownElements(setUp):
     # Selecting elements from dropdown using select method
     dropdownElement = driver.find_element_by_id("carselect")
