@@ -3,15 +3,13 @@ from selenium import webdriver
 import time
 from selenium.webdriver.support.select import Select
 
-global driver
 
-
-@pytest.fixture()
-def setUp(self):
-    driver = webdriver.Chrome(executable_path="D:\softwares\Chrome Driver\chromedriver.exe")
+@pytest.fixture(scope='module')
+def setUp():
+    global driver
+    driver = webdriver.Chrome(executable_path="D://softwares//Chrome Driver//chromedriver.exe")
     driver.get("https://letskodeit.teachable.com/p/practice")
     driver.maximize_window()
-    print("Hello")
 
 
 def test_fun(setUp):
