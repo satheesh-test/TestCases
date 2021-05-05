@@ -104,7 +104,6 @@ def testSwitchingAlert(setUp):
 # Scrolling down the web page
 def testScrollingDown(setUp):
     driver.execute_script("window.scrollBy(0, 1000000);")
-    time.sleep(3)
 
 
 # Scrolling up the web page
