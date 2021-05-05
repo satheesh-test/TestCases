@@ -29,7 +29,7 @@ def test_fun(setUp):
     elementSelection.select_by_index(0)
     time.sleep(2)
     elementSelection.select_by_index(1)
-    time.sleep(2)
+    time.sleep(4)
 
 
 def tearDown(self):
