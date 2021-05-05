@@ -10,6 +10,8 @@ def setUp():
     driver = webdriver.Chrome(executable_path="D://softwares//Chrome Driver//chromedriver.exe")
     driver.get("https://letskodeit.teachable.com/p/practice")
     driver.maximize_window()
+    yield 
+    driver.close()
 
 
 def test_fun(setUp):
@@ -30,5 +32,4 @@ def test_fun(setUp):
     time.sleep(4)
 
 
-def tearDown(self):
-    driver.close()
+
