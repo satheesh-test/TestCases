@@ -112,3 +112,6 @@ def testScrollingDown(setUp):
 def testScrolingUp(setUp):
     driver.execute_script("window.scrollBy(0, -100000);")
     time.sleep(3)
+    print("Done")
+    print("Done")
+    print("Done")
