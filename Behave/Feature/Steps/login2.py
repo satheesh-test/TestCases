@@ -6,7 +6,7 @@ import time
 
 @given('Launch the browser')
 def launchBrowser(context):
-    context.driver = webdriver.Chrome(executable_path="D:\softwares\Chrome Driver\chromedriver.exe")
+    context.driver = webdriver.Chrome(executable_path="D://softwares//Chrome Driver//chromedriver.exe")
 
 
 @given("head to Google search page")
